@@ -8,10 +8,12 @@ select
     o.ordercost,
     o.ordersellingprice,
 -- from raw customer
+    c.customerid,
     c.customername,
     c.segment,
     c.country,
 -- from raw product
+    p.productid,
     p.CATEGORY,
     p.productname,
     p.subcategory
