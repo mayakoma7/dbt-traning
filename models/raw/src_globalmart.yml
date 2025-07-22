@@ -2,13 +2,16 @@ version: 2
 
 sources:
   - name: globalmart
+    description: a clone of the SF dB
     database: raw
     schema: global_mart
     tables:
       - name: customer
       - name: orders
+        description: raw orders table
         columns:
           - name: orderid
+            description:  PK for orders
             tests:
               - unique
               - not_null
